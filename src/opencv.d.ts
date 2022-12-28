@@ -112,6 +112,7 @@ import { BackgroundSubtractorMOG2 } from './video/BackgroundSubtractorMOG2';
 import { ObjectDetection as _ObjectDetection } from './ObjectDetection/ObjectDetection';
 import { _Motion, _Optflow, Optflow, Motion, ObjectTracking } from './video/track';
 import { MatVector } from './core/MatVector';
+import { CLAHE } from './core/CLAHE';
 import { dnn, dnn_Net } from './dnn/dnn';
 
 declare module opencv {
@@ -252,6 +253,7 @@ declare module opencv {
         BackgroundSubtractor: BackgroundSubtractor;
         BackgroundSubtractorMOG2: BackgroundSubtractorMOG2;
         MatVector: MatVector;
+        CLAHE: CLAHE;
 
         // Histogram
         HISTCMP_CORREL: HistCompMethods.HISTCMP_CORREL;
@@ -1775,4 +1777,5 @@ export {
     MatVector,
     RotatedRect,
     BorderTypes,
+    CLAHE,
 };
