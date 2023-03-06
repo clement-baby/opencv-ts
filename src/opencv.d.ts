@@ -1480,6 +1480,7 @@ declare module opencv {
         ): void;
         resize(src: Mat, dst: Mat, dsize: Size, fx: number, fy: number): void;
         resize(src: Mat, dst: Mat, dsize: Size): void;
+        rotate(src: Mat, angle: number): Mat;
         warpAffine(
             src: Mat,
             dst: Mat,
