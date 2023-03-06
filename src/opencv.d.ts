@@ -114,6 +114,7 @@ import { _Motion, _Optflow, Optflow, Motion, ObjectTracking } from './video/trac
 import { MatVector } from './core/MatVector';
 import { CLAHE } from './core/CLAHE';
 import { dnn, dnn_Net } from './dnn/dnn';
+import { RotateWithTranspose } from './helpers/AddLib';
 
 declare module opencv {
     interface VideoCapture {
@@ -187,7 +188,8 @@ declare module opencv {
             _Optflow,
             _Type,
             ObjectTracking,
-            dnn
+            dnn,
+            RotateWithTranspose
     {
         blobFromImage(
             image: Mat,
