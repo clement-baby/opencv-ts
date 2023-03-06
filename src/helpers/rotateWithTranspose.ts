@@ -1,6 +1,6 @@
 import cv, { Mat } from "../opencv"
 
-export const rotate = (src: Mat, angle: number): Mat => {
+export const rotateWithTranspose = (src: Mat, angle: number): Mat => {
   let dest = new cv.Mat()
   switch (angle) {
   case 90: {
